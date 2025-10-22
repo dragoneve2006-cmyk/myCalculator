@@ -1,44 +1,51 @@
 body{
     background-color: gray;
+    /*centro il div*/
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100ch;
 }
-
+/*Gestione Titolo*/
 h1{
+    padding-top: 10px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+
 }
+/*Gestione DIV*/
 div{
+    border-radius: 15px;
     background-color: hsl(0, 4%, 66%);
-    padding: 10px 10px 10px 10px;
+    width: 25em;
+    height: auto;
     margin: auto;
     text-align: center;
+    box-shadow: 10px 10px 10px hsl(0, 1%, 32%);
 }
 
-.op{
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px #6d6b6b;
-}
-
-.tBox{
-    margin-top: 3em;
-}
-
+/*Colori pulsanti e sfumatura al passaggio*/
+/*Gestione pulsanti*/
 button{
-    margin-top: 3em;
-    padding: 10px 10px;
+    width: 2em;
+    height: 2em;
+    border-radius: 50px;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px hsl(0, 1%, 40%);
+    background-color: hsl(16, 74%, 55%);
+}
+button:hover{
+    box-shadow: 5px 5px 5px hsl(0, 1%, 30%);
+    background-color: hsl(16, 74%, 45%);
+    font-family: Arial;
 }
 
-#add{
-    background-color: hsl(194, 78%, 60%);
-}
-#sub{
-    background-color: hsl(145, 78%, 60%);
-}
-#mult{
-    background-color: hsl(71, 78%, 60%);
-}
-#div{
-    background-color: hsl(300, 78%, 60%);
-}
+/*Gestione tBox*/
 
 
