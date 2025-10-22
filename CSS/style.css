@@ -32,10 +32,10 @@ button{
     width: 2em;
     height: 2em;
     border-radius: 50px;
+    border-color: transparent;
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    padding-top: 5px;
     margin-bottom: 10px;
     box-shadow: 5px 5px 5px hsl(0, 1%, 40%);
     background-color: hsl(16, 74%, 55%);
@@ -43,9 +43,16 @@ button{
 button:hover{
     box-shadow: 5px 5px 5px hsl(0, 1%, 30%);
     background-color: hsl(16, 74%, 45%);
-    font-family: Arial;
 }
 
 /*Gestione tBox*/
+.tBox{
+    padding: 25px 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    background-color: gray;
+    box-shadow: 3px 3px 3px hsl(0, 0%, 30%);
+}
 
 
