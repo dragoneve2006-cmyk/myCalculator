@@ -1,0 +1,44 @@
+body{
+    background-color: gray;
+}
+
+h1{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+div{
+    background-color: hsl(0, 4%, 66%);
+    padding: 10px 10px 10px 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.op{
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #6d6b6b;
+}
+
+.tBox{
+    margin-top: 3em;
+}
+
+button{
+    margin-top: 3em;
+    padding: 10px 10px;
+}
+
+#add{
+    background-color: hsl(194, 78%, 60%);
+}
+#sub{
+    background-color: hsl(145, 78%, 60%);
+}
+#mult{
+    background-color: hsl(71, 78%, 60%);
+}
+#div{
+    background-color: hsl(300, 78%, 60%);
+}
+
+
