@@ -3,6 +3,8 @@ let result = 0;
 //Array <HTMLButtonElement>
 let allBtn = document.querySelectorAll("button");
 
+//Getting the input from the button and printing it
+//in the console to get a feedback
 allBtn.forEach((btn) => {
     console.log(btn);
     btn.addEventListener("click", (event) => {
