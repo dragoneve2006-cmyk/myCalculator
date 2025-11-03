@@ -1,3 +1,8 @@
+//importazione funzione da un altro file
+// esempio: import {} from "sorgente"
+import {performOperation} from "./core/math/performOperation.js";
+import { MyLog } from "./core/log/log.js";
+
 //Array <HTMLButtonElement>
 let allBtn = document.querySelectorAll("button");
 
@@ -27,6 +32,7 @@ allBtn.forEach((btn) => {
         }
 
         let operation = event.target.attributes["operation"].value;
+        
         let res = performOperation(a, b, operation);
         result.innerText = "Result " + res;
 
@@ -52,59 +58,5 @@ allBtn.forEach((btn) => {
     });
 });
 
-//DOCUMENTAZIONE PER FUNZIONE
-/**
- * Esegue l'operazione tra a e b
- * @param {*} a {number}
- * @param {*} b {number}
- * @param {*} operation {string} L'operazione da eseguire : + - * / 
- * @returns {number | Error}
- */
-function performOperation(a, b, operation){
-    switch(operation){
-        case "+":
-            return add(a, b);
-        case "-":
-            return sub(a, b);
-        case "*":
-            return mult(a, b);
-        case "/":
-            return div(a ,b);
-        default:
-            return Error("⚠️ Operation Not Valid ⚠️");
-    }
-}
-
-
-//FUNZIONI
-function add(a, b){
-    return a + b;
-}
-
-function sub(a, b){
-    return a - b;
-}
-
-function mult(a, b){
-    return a * b;
-}
-
-function div(a, b){
-    return a / b;
-}
-
-
-//AGGIUNTA MEMORIA INTERNA
-function MyLog(a, b, operation){
-    this.val1 = a;
-    this.val2 = b;
-    this.operation = operation;
-
-    this.fnLoad = () => {
-        console.log("LOAD", this.val1, this.val2);
-        val1.value = this.val1;
-        val2.value = this.val2;
-    }
-} 
 
 
