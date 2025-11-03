@@ -1,0 +1,14 @@
+{
+  "name": "mycalculator",
+  "version": "0.3.0",
+  "description": "Progetto Calcolatrice AFP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "calculator"
+  ],
+  "author": "Nathan Seganti",
+  "license": "MIT"
+}
