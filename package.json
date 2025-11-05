@@ -1,14 +1,20 @@
 {
   "name": "mycalculator",
   "version": "0.3.0",
-  "description": "Progetto Calcolatrice AFP",
+  "description": "Progetto Calcolatrice",
   "main": "index.js",
   "scripts": {
+    "dev": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "calculator"
   ],
   "author": "Nathan Seganti",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "vite": "^6.4.1"
+  }
 }
